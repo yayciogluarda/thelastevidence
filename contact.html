@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-dark">
+    <div class="container">
+        <header class="text-center my-5">
+            <h1 class="text-white typewriter">Contact Us</h1>
+        </header>
+
+        <!-- Navigation Buttons -->
+        <nav class="navbar">
+            <div class="navbar-links">
+                <a href="index.html" class="nav-btn">Home Page</a>
+                <a href="hints_and_solution.html" class="nav-btn">Hints & Solution</a>
+                <a href="about.html" class="nav-btn">About</a>
+            </div>
+        </nav>
+
+         <!-- Main Content -->
+         <section class="content text-white text-center">
+            <div class="about-box mx-auto">
+                <form id="contact-form text-white typewriter" action="https://formsubmit.co/yayciogluarda@gmail.com" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+    </div>
+    
+    <script>
+        function toggleNavbar() {
+            const navbarLinks = document.querySelector('.navbar-links');
+            navbarLinks.classList.toggle('active');
+        }
+    </script>
+    
+    <footer class="footer">
+        <p>&copy; 2024 The Last Evidence. All Rights Reserved.</p>
+    </footer>
+    
+
+</body>
+
