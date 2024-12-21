@@ -1,0 +1,332 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    max-width: 70px; /* Adjust size */
+    margin-bottom: 20px;
+}
+
+.logo-container{
+    display: block;
+    margin: 0 auto; /* Center the logo */
+}
+
+/* Set background color and text color */
+body.bg-dark {
+    background-color: #1a1a1a;
+    color: white;
+    font-family: 'Arial', sans-serif; /* Typewriter style */
+}
+
+.typewriter {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: .15em solid #fff; /* Cursor */
+    animation: typing 2s steps(30, end) 1s forwards, blinkCaret 0.75s step-end infinite;
+}
+
+/* Blinking caret animation */
+@keyframes blinkCaret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* Header styles */
+header {
+    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+    min-height: 100px; /* Adjust to match the height of your content */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Navbar Styles */
+.navbar {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.navbar-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between navbar items */
+    margin-top: 10px;
+}
+
+.nav-btn {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: #ccc;
+}
+
+/* Game container styles */
+.game-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 400px;
+    margin-bottom: 60px;
+}
+
+/* Game box styles */
+.game-box {
+    background-color: #212529;
+    color: white;
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    margin-bottom: 40px;
+}
+
+.game-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.game-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.game-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+    margin-bottom: 10px;
+}
+
+.game-description {
+    font-size: 14px;
+    color: white;
+}
+
+.game-title-full {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.game-description-full {
+    font-size: 20px;
+    color: white;
+}
+
+/* Footer Styles */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #212529;
+    color: white;
+    font-size: 14px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Media Query for responsive navbar */
+@media (max-width: 768px) {
+    .navbar-links {
+        flex-direction: column;  /* Stack navbar items vertically */
+        gap: 10px;  /* Add some gap between navbar items */
+    }
+
+    .nav-btn {
+        width: 100%;  /* Make navbar buttons full width on small screens */
+        text-align: center;
+    }
+}
+
+/* Default navbar layout (horizontal on large screens) */
+@media (min-width: 769px) {
+    .navbar-links {
+        flex-direction: row; /* Align navbar items side by side */
+    }
+}
+
+/* About Page Styles */
+.about-box {
+    background-color:#212529; /* dark background for the box */
+    border-radius: 40px;
+    padding: 30px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1, h3 {
+    font-family: 'Arial', sans-serif;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Centering the page */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+label {
+    font-weight: bold;
+}
+input, textarea {
+    width: 80%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button {
+    padding: 10px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px;
+    width: 100px;
+}
+button:hover {
+    background-color: #0056b3;
+}
+
+.description-box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    gap: 1rem;
+    max-width: 1200px; /* Set max width for the container */
+    margin: auto;
+    margin-top: 30px;
+    Margin-bottom: 60px;
+}
+
+.description-image {
+    width: 250px; /* Adjust the size of the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    float: left; /* Make the image float to enable text wrapping */
+    margin-right: 20px;
+}
+
+ul {
+    padding-left: 20px; /* Adjust this value for the desired indentation */
+}
+
+ol {
+    padding-left: 20px; /* For ordered lists */
+}
+
+li {
+    margin-left: 10px; /* Optional: Add extra indentation to each list item */
+}
+
+.blog-section {
+    background-color: white; /* White background for the blog */
+    padding: 2rem;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 60px;
+}
+.blog-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem; /* Spacing below the image */
+}
+.blog-section h1, .blog-section h3 {
+    color: #212529; /* Dark text for headings */
+}
+.blog-section p, .blog-section blockquote {
+    color: #343a40; /* Slightly lighter color for paragraphs */
+    line-height: 1.6; /* Improved readability */
+}
+.blockquote {
+    border-left: 5px solid #6c757d; /* Highlight blockquotes */
+    padding-left: 1rem;
+    font-style: italic;
+    color: #6c757d;
+}
+.hint-title {
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background-color: #343a40; /* Dark grey background for titles */
+    border: 1px solid #495057;
+    padding: 15px;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+}
+.hint-title:hover {
+    background-color: #495057;
+}
+.hint-content {
+    background-color: #212529; /* Slightly lighter grey for hints */
+    border: 1px solid #495057;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    padding: 15px;
+    display: none;
+}
+.hint-header {
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background-color: #495057; /* Contrast color for hint headers */
+    border: 1px solid #6c757d;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+    margin-bottom: 10px;
+}
+.hint-header:hover {
+    background-color: #6c757d;
+}
+.hint-body {
+    padding: 10px;
+    background-color: #343a40;
+    border: 1px solid #495057;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: none;
+    color: #adb5bd; /* Text color for hints */
+}
+
+.hints-container{
+    margin-bottom: 80px;
+}
