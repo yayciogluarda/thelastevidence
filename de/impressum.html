@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum</title>
+    <link rel="icon" href="../public/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="bg-dark">
+    <div class="lang-switcher">
+        <a href="../impressum.html">
+            <img src="../flags/uk.png" alt="English" class="flag">
+            English
+        </a>
+        <a href="impressum.html">
+            <img src="../flags/de.png" alt="Deutsch" class="flag">
+            Deutsch
+        </a>
+    </div>
+
+    <div class="container">
+        <header class="text-center my-5">
+            <img src="../public/images/thelastevidencelogo.png" alt="The Last Evidence Logo" class="logo mb-3">
+            <h1 class="text-white typewriter">Impressum&nbsp;</h1>
+        </header>
+
+        <!-- Navigation Buttons -->
+        <nav class="navbar">
+            <div class="navbar-links">
+                <a href="index.html" class="nav-btn">Startseite</a>
+                <a href="hints_and_solution.html" class="nav-btn">Hinweise & Lösung</a>
+                <a href="about.html" class="nav-btn">Über uns</a>
+            </div>
+        </nav>
+        <hr>
+
+        <!-- Main Content -->
+        <section class="content text-white text-center">
+            <div class="about-box mx-auto typewriter text-white">
+                <p><strong>Rechtliche Informationen</strong></p>
+                <p>Arda Yaycioglu<br>
+                Wühlischstraße 27<br>
+                10245<br>
+                Berlin, Deutschland</p>
+
+                <p><strong>Kontakt:</strong><br>
+                contact@thelastevidence.com</p>
+
+                <p><strong>Haftungsausschluss:</strong><br>
+                Alle Inhalte wurden sorgfältig geprüft. Für die Richtigkeit, Vollständigkeit oder Aktualität der Inhalte kann jedoch keine Gewähr übernommen werden.</p>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        function toggleNavbar() {
+            const navbarLinks = document.querySelector('.navbar-links');
+            navbarLinks.classList.toggle('active');
+        }
+    </script>
+
+    <footer class="footer">
+        <p>&copy; 2024 The Last Evidence. Alle Rechte vorbehalten. <a href="impressum.html" style="color: white;">Impressum</a></p>
+    </footer>
+</body>
+</html>

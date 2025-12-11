@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mord an einem CEO – Hinweise & Lösung</title>
+    <link rel="icon" href="../public/images/favicon.ico" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="../styles.css" rel="stylesheet">
+</head>
+<body class="bg-dark">
+    <div class="lang-switcher">
+        <a href="../murderofaceo-solution.html">
+            <img src="../flags/uk.png" alt="English" class="flag">
+            English
+        </a>
+        <a href="murderofaceo-solution.html">
+            <img src="../flags/de.png" alt="Deutsch" class="flag">
+            Deutsch
+        </a>
+    </div>
+
+    <div class="container">
+        <header class="text-center my-5">
+            <img src="../public/images/thelastevidencelogo.png" alt="The Last Evidence Logo" class="logo mb-3">
+            <h1 class="text-white typewriter">Mord an einem CEO – Hinweise & Lösung</h1>
+        </header>
+
+        <!-- Navigation Buttons -->
+        <nav class="navbar">
+            <div class="navbar-links">
+                <a href="index.html" class="nav-btn">Startseite</a>
+                <a href="about.html" class="nav-btn">Über uns</a>
+                <a href="contact.html" class="nav-btn">Kontakt</a>
+            </div>
+        </nav>
+        <hr>
+    </div>
+
+    <div class="row description-box mx-auto">
+        <div class="col-12 text-center mb-4">
+            <p>Bist du bereit, das Spiel zu beenden? Gib nur den Vornamen des Mörders ein, um die Lösung zu sehen. Gib den Namen erst ein, nachdem du alle anderen Verdächtigen ausgeschlossen hast. Die Hinweise findest du weiter unten.</p>
+            <input type="text" class="form-control" placeholder="Gib den Vornamen des Mörders ein" id="killerName">
+            <button class="btn btn-danger mt-3" onclick="checkSolution()">Lösung prüfen</button>
+        </div>
+    </div>
+
+    <!-- Hints Section -->
+         <div class="container hints-container">
+        <h1 class="text-center mb-4">Hinweise zu den Rätseln</h1><br>
+    <div class="mystery">
+    <div class="hint-title" onclick="toggleVisibility('mystery1')">
+        Detektiv Heisenbergs E-Mail
+        <i class="fas fa-chevron-down"></i>
+    </div>
+    <div id="mystery1" class="hint-content">
+        <div class="hint">
+            <div class="hint-header" onclick="toggleVisibility('hint1-1')">
+                Hinweis 1
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="hint1-1" class="hint-body">
+                Es sieht so aus, als hätte Detektiv Heisenberg eine E-Mail ausgedruckt und darauf Notizen gemacht.
+            </div>
+        </div>
+        <div class="hint">
+            <div class="hint-header" onclick="toggleVisibility('hint1-2')">
+                Hinweis 2
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="hint1-2" class="hint-body">
+                Sie scheint bei der Wahl ihres Passworts die 3. und die 5. Methode verwendet zu haben. Wo finden wir jetzt den Namen ihrer Tochter?
+            </div>
+        </div>
+        <div class="hint">
+            <div class="hint-header" onclick="toggleVisibility('hint1-3')">
+                Hinweis 3
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="hint1-3" class="hint-body">
+                Der Name der Tochter wird in der Zeitung im Abschnitt „Schulzeitung“ genannt. Wann hat sie Geburtstag?
+            </div>
+        </div>
+        <div class="hint">
+            <div class="hint-header" onclick="toggleVisibility('hint1-4')">
+                Hinweis 4
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="hint1-4" class="hint-body">
+                Der Geburtstag wird in dem Brief genannt, den Detektiv Winter zu Beginn erhalten hat. Er war 2 Tage vor dem Schreiben des Briefes.
+            </div>
+        </div>
+        <div class="hint">
+            <div class="hint-header" onclick="toggleVisibility('hint1-5')">
+                Hinweis 5
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="hint1-5" class="hint-body">
+                Jetzt versuchen wir, auf einen E-Mail-Dienst zuzugreifen. Wie wäre das Passwort unter Verwendung der 5. Methode für die IT-E-Mail?
+            </div>
+        </div>
+        <div class="hint">
+            <div class="hint-header" onclick="toggleVisibility('hint1-6')">
+                Lösung
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="hint1-6" class="hint-body">
+                Das Passwort für die E-Mail-Adresse lautet <strong>gr3t@07102012MAIL</strong>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mystery">
+    <div class="hint-title" onclick="toggleVisibility('mystery2')">
+        Die im Zip-Beutel gefundene Substanz
+        <i class="fas fa-chevron-down"></i>
+    </div>
+    <div id="mystery2" class="hint-content">
+        <div class="hint">
+            <div class="hint-header" onclick="toggleVisibility('hint2-1')">
+                Hinweis 1
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="hint2-1" class="hint-body">
+                Polizeiberichte zeigen, dass auf einem der Verdächtigen eine bestimmte Substanz gefunden wurde. Irgendwelche Ideen, was es sein könnte und wem sie gehören könnte?
+            </div>
+        </div>
+        <div class="hint">
+            <div class="hint-header" onclick="toggleVisibility('hint2-2')">
+                Hinweis 2
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="hint2-2" class="hint-body">
+                Es gibt eine Substanzanalyse auf dem E-Mail-Server. Wer könnte etwas mit dieser Substanz zu tun haben?
+            </div>
+        </div>
+        <div class="hint">
+            <div class="hint-header" onclick="toggleVisibility('hint2-3')">
+                Hinweis 3
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="hint2-3" class="hint-body">
+                Eine bestimmte Person scheint ein Drogenproblem zu haben. Interne Chats zeigen, dass Dr. Falkenberg davon wusste. Wem gehört diese Worker-ID?
+            </div>
+        </div>
+        <div class="hint">
+            <div class="hint-header" onclick="toggleVisibility('hint2-4')">
+                Hinweis 4
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="hint2-4" class="hint-body">
+                Thomas Schulte hatte Kokain bei sich. Er scheint kokainsüchtig zu sein. Könnte er trotzdem Maximilian ermordet haben?
+            </div>
+        </div>
+        <div class="hint">
+            <div class="hint-header" onclick="toggleVisibility('hint2-5')">
+                Hinweis 5
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="hint2-5" class="hint-body">
+                Wir wissen, dass er an diesem Tag früher entlassen wurde. Hatte Thomas die Gelegenheit, Maximilian an diesem Tag zu vergiften? War er im Labor?
+            </div>
+        </div>
+        <div class="hint">
+            <div class="hint-header" onclick="toggleVisibility('hint2-6')">
+                Lösung
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="hint2-6" class="hint-body">
+                Die Zugangskarte von Thomas Schulte wurde an diesem Tag deaktiviert. Laut Aussage des Sicherheitsmannes kam er zur Tür, konnte aber nicht hineinkommen. Thomas Schulte konnte Maximilian nicht vergiften.
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mystery">
+    <div class="hint-title" onclick="toggleVisibility('mystery3')">
+        Die Fingerabdrücke
+        <i class="fas fa-chevron-down"></i>
+    </div>
+    <div id="mystery3" class="hint-content">
+        <div class="hint">
+            <div class="hint-header" onclick="toggleVisibility('hint3-1')">
+                Hinweis 1
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="hint3-1" class="hint-body">
+                Was hat die Person auf Dr. Falkenbergs Telefon gemacht?
+            </div>
+        </div>
+        <div class="hint">
+            <div class="hint-header" onclick="toggleVisibility('hint3-2')">
+                Hinweis 2
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="hint3-2" class="hint-body">
+                Sein Telefon scheint zurückgesetzt worden zu sein. Gibt es jemanden in den Chats, der zugibt, das Telefon zurückgesetzt zu haben?
+            </div>
+        </div>
+        <div class="hint">
+            <div class="hint-header" onclick="toggleVisibility('hint3-3')">
+                Hinweis 3
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="hint3-3" class="hint-body">
+                Wem gehören die Fingerabdrücke?
+            </div>
+        </div>
+        <div class="hint">
+            <div class="hint-header" onclick="toggleVisibility('hint3-4')">
+                Lösung
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="hint3-4" class="hint-body">
+                Dr. Heidemann hat Dr. Falkenbergs Telefon zurückgesetzt und den IT-Mitarbeiter gebeten, interne Chats zu löschen, weil Dr. Falkenberg ihn bedroht hatte, das Unternehmen nicht zu verlassen.
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mystery">
+    <div class="hint-title" onclick="toggleVisibility('mystery4')">
+        Die für den Mord verwendete Substanz & Zeitpunkt der Einnahme
+        <i class="fas fa-chevron-down"></i>
+    </div>
+    <div id="mystery4" class="hint-content">
+        <div class="hint">
+            <div class="hint-header" onclick="toggleVisibility('hint4-1')">
+                Hinweis 1
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="hint4-1" class="hint-body">
+                Am 3. Oktober hat RevoluPharma offenbar einen Bericht über eine fehlende Substanz herausgegeben.
+            </div>
+        </div>
+        <div class="hint">
+            <div class="hint-header" onclick="toggleVisibility('hint4-2')">
+                Hinweis 2
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="hint4-2" class="hint-body">
+                Detektiv Heisenberg hat sich selbst ein Drogentest-Kit bestellt. Was könnte ihr Zweck gewesen sein?
+            </div>
+        </div>
+        <div class="hint">
+            <div class="hint-header" onclick="toggleVisibility('hint4-3')">
+                Hinweis 3
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="hint4-3" class="hint-body">
+                Sie scheint eine E-Mail an das Drogentest-Unternehmen geschickt zu haben. Dieses hat mit einem Anhang geantwortet.
+            </div>
+        </div>
+        <div class="hint">
+            <div class="hint-header" onclick="toggleVisibility('hint4-4')">
+                Hinweis 4
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="hint4-4" class="hint-body">
+                Wir müssen die Getränkemuster testen, um herauszufinden, welche Art von Opioid im Getränk war.
+            </div>
+        </div>
+        <div class="hint">
+            <div class="hint-header" onclick="toggleVisibility('hint4-5')">
+                Hinweis 5
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="hint4-5" class="hint-body">
+                Das Drogentest-Kit zeigt, dass Fentanyl in Dr. Falkenbergs Getränk gemischt wurde. Wenn man nur wüsste, wie man daraus den Zeitpunkt der Einnahme berechnet…
+            </div>
+        </div>
+        <div class="hint">
+            <div class="hint-header" onclick="toggleVisibility('hint4-6')">
+                Hinweis 6
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="hint4-6" class="hint-body">
+                Eine E-Mail ihres Kollegen erklärt Detektiv Heisenberg, wie man den Zeitpunkt der Einnahme durch Kenntnis des tmax berechnet. Kennen wir das tmax?
+            </div>
+        </div>
+        <div class="hint">
+            <div class="hint-header" onclick="toggleVisibility('hint4-7')">
+                Lösung
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="hint4-7" class="hint-body">
+                Der wissenschaftliche Artikel zeigt, dass das tmax für Fentanyl 30 Minuten beträgt. Die Todeszeit (20:16) muss 30 Minuten nach der Einnahme gewesen sein. Das Fentanyl muss also spätestens um 19:46 in sein Getränk gemischt worden sein. Kannst du damit jemanden ausschließen?
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mystery">
+    <div class="hint-title" onclick="toggleVisibility('mystery5')">
+        Die handgeschriebene Notiz
+        <i class="fas fa-chevron-down"></i>
+    </div>
+    <div id="mystery5" class="hint-content">
+        <div class="hint">
+            <div class="hint-header" onclick="toggleVisibility('hint5-1')">
+                Hinweis 1
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="hint5-1" class="hint-body">
+                Polizeiberichte zeigen, dass es am Tatort eine handgeschriebene Notiz gab. Gibt es Hinweise, die diese Notiz mit dem Mord in Verbindung bringen?
+            </div>
+        </div>
+        <div class="hint">
+            <div class="hint-header" onclick="toggleVisibility('hint5-2')">
+                Hinweis 2
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="hint5-2" class="hint-body">
+                Eine der E-Mails scheint denselben Ausdruck wie die handgeschriebene Notiz zu verwenden.
+            </div>
+        </div>
+        <div class="hint">
+            <div class="hint-header" onclick="toggleVisibility('hint5-3')">
+                Hinweis 3
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="hint5-3" class="hint-body">
+                Die Notiz scheint vom Mörder geschrieben worden zu sein. Gibt es andere handgeschriebene Notizen, mit denen man diese vergleichen könnte?
+            </div>
+        </div>
+        <div class="hint">
+            <div class="hint-header" onclick="toggleVisibility('hint5-4')">
+                Hinweis 4
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="hint5-4" class="hint-body">
+                Wer hat die Notiz von 2001 geschrieben? Passt die Handschrift zum Täter?
+            </div>
+        </div>
+        <div class="hint">
+            <div class="hint-header" onclick="toggleVisibility('hint5-5')">
+                Lösung
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="hint5-5" class="hint-body">
+                Emilias Handschrift stimmt nicht mit der des Täters überein.
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mystery">
+    <div class="hint-title" onclick="toggleVisibility('mystery6')">
+        Sophies Geheimnis
+        <i class="fas fa-chevron-down"></i>
+    </div>
+    <div id="mystery6" class="hint-content">
+        <div class="hint">
+            <div class="hint-header" onclick="toggleVisibility('hint6-1')">
+                Hinweis 1
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="hint6-1" class="hint-body">
+                Sophie trinkt nicht aus dem Weinglas ihres Mannes. Warum könnte das sein?
+            </div>
+        </div>
+        <div class="hint">
+            <div class="hint-header" onclick="toggleVisibility('hint6-2')">
+                Hinweis 2
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="hint6-2" class="hint-body">
+                Wo sehen wir sonst noch ihren Namen? Sie hat eine Reservierung vorgenommen. Haben wir Chats mit ihrer Telefonnummer?
+            </div>
+        </div>
+        <div class="hint">
+            <div class="hint-header" onclick="toggleVisibility('hint6-3')">
+                Hinweis 3
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="hint6-3" class="hint-body">
+                Sie möchte Maximilian Falkenberg etwas mitteilen. Was könnte es sein?
+            </div>
+        </div>
+        <div class="hint">
+            <div class="hint-header" onclick="toggleVisibility('hint6-4')">
+                Hinweis 4
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="hint6-4" class="hint-body">
+                Welche anderen offenen Tabs sind im Screenshot der Reservierung sichtbar?
+            </div>
+        </div>
+        <div class="hint">
+            <div class="hint-header" onclick="toggleVisibility('hint6-5')">
+                Lösung
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="hint6-5" class="hint-body">
+                Sophie war offenbar schwanger, deshalb hat sie nicht getrunken. Sie hat eine Reservierung gemacht, um Maximilian mitzuteilen, dass sie schwanger ist. Sie scheint sehr aufgeregt zu sein, es ihm zu sagen.
+            </div>
+        </div>
+    </div>
+</div>
+        
+      <div class="mystery">
+    <div class="hint-title" onclick="toggleVisibility('mystery7')">
+        Die Veranstaltungsbroschüre
+        <i class="fas fa-chevron-down"></i>
+    </div>
+    <div id="mystery7" class="hint-content">
+        <div class="hint">
+            <div class="hint-header" onclick="toggleVisibility('hint7-1')">
+                Hinweis 1
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="hint7-1" class="hint-body">
+                Was verrät uns die Veranstaltungsbroschüre?
+            </div>
+        </div>
+        <div class="hint">
+            <div class="hint-header" onclick="toggleVisibility('hint7-2')">
+                Hinweis 2
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="hint7-2" class="hint-body">
+                Auf der Broschüre scheint ein Veranstaltungsprogramm zu stehen. Können wir dadurch jemanden ausschließen?
+            </div>
+        </div>
+        <div class="hint">
+            <div class="hint-header" onclick="toggleVisibility('hint7-3')">
+                Hinweis 3
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="hint7-3" class="hint-body">
+                Wissen wir, wer den Wein mitgebracht hat und wann diese Person angekommen ist?
+            </div>
+        </div>
+        <div class="hint">
+            <div class="hint-header" onclick="toggleVisibility('hint7-4')">
+                Hinweis 4
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="hint7-4" class="hint-body">
+                Es gibt Textnachrichten, die zeigen, wann Emilia bei RevoluPharma angekommen ist.
+            </div>
+        </div>
+        <div class="hint">
+            <div class="hint-header" onclick="toggleVisibility('hint7-5')">
+                Hinweis 5
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="hint7-5" class="hint-body">
+                Wissen wir, ob Dr. Heidemann tatsächlich an seiner Präsentation teilgenommen hat?
+            </div>
+        </div>
+        <div class="hint">
+            <div class="hint-header" onclick="toggleVisibility('hint7-6')">
+                Lösung
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="hint7-6" class="hint-body">
+                Die Zeitung zeigt, dass Dr. Heidemann seine Präsentation erfolgreich abgeschlossen hat. Emilia Schneider kommt nach Beginn seiner Rede an.
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mystery">
+    <div class="hint-title" onclick="toggleVisibility('mystery8')">
+        Die Sicherheitskameraufnahmen vom 2. Oktober
+        <i class="fas fa-chevron-down"></i>
+    </div>
+    <div id="mystery8" class="hint-content">
+        <div class="hint">
+            <div class="hint-header" onclick="toggleVisibility('hint8-1')">
+                Hinweis 1
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="hint8-1" class="hint-body">
+                Wer könnte auf der Sicherheitskamera zu sehen sein, mit dem Rücken zur Kamera?
+            </div>
+        </div>
+        <div class="hint">
+            <div class="hint-header" onclick="toggleVisibility('hint8-2')">
+                Hinweis 2
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="hint8-2" class="hint-body">
+                Bei unseren Verdächtigen deuten Haarfarbe und Geschlecht auf Sophie hin. Kannst du den Bereich auf dem bereitgestellten RevoluPharma-Plan bestimmen? Was machte sie dort?
+            </div>
+        </div>
+        <div class="hint">
+            <div class="hint-header" onclick="toggleVisibility('hint8-3')">
+                Hinweis 3
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="hint8-3" class="hint-body">
+                Sie scheint auf die Toilette zu gehen. Gibt es eine Möglichkeit zu wissen, wie lange sie dort war?
+            </div>
+        </div>
+        <div class="hint">
+            <div class="hint-header" onclick="toggleVisibility('hint8-4')">
+                Hinweis 4
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="hint8-4" class="hint-body">
+                Ihre Textnachricht an Lukas gibt uns einen Hinweis, was sie getan hat und wie lange sie dort war. Können wir sie anhand des Zeitfensters ausschließen?
+            </div>
+        </div>
+        <div class="hint">
+            <div class="hint-header" onclick="toggleVisibility('hint8-5')">
+                Lösung
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="hint8-5" class="hint-body">
+                Sophie war zwischen 19:31 und mindestens 19:52 auf der Toilette vor dem Labor. Wenn du die Zeit der Einnahme kennst, kannst du herausfinden, ob sie Maximilian hätte vergiften können.
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mystery">
+    <div class="hint-title" onclick="toggleVisibility('mystery9')">
+        Das Fahrtticket
+        <i class="fas fa-chevron-down"></i>
+    </div>
+    <div id="mystery9" class="hint-content">
+        <div class="hint">
+            <div class="hint-header" onclick="toggleVisibility('hint9-1')">
+                Hinweis 1
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="hint9-1" class="hint-body">
+                Wann ist Lukas bei RevoluPharma angekommen?
+            </div>
+        </div>
+        <div class="hint">
+            <div class="hint-header" onclick="toggleVisibility('hint9-2')">
+                Hinweis 2
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="hint9-2" class="hint-body">
+                Es gibt einen Zugfahrplan. Wissen wir, welchen Zug er genommen hat?
+            </div>
+        </div>
+        <div class="hint">
+            <div class="hint-header" onclick="toggleVisibility('hint9-3')">
+                Hinweis 3
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="hint9-3" class="hint-body">
+                Der Zeitstempel auf seinem Ticket zeigt, dass er den 19:04-Zug nicht erwischen konnte. Wann fuhr der nächste Zug?
+            </div>
+        </div>
+        <div class="hint">
+            <div class="hint-header" onclick="toggleVisibility('hint9-4')">
+                Hinweis 4
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="hint9-4" class="hint-body">
+                Kam der nächste Zug pünktlich? Gab es Verspätungen?
+            </div>
+        </div>
+        <div class="hint">
+            <div class="hint-header" onclick="toggleVisibility('hint9-5')">
+                Hinweis 5
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="hint9-5" class="hint-body">
+                Die Zeitung berichtet, dass es an diesem Tag Zugverspätungen gab, wodurch sein Zug um 12 Minuten verzögert wurde.
+            </div>
+        </div>
+        <div class="hint">
+            <div class="hint-header" onclick="toggleVisibility('hint9-6')">
+                Hinweis 6
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="hint9-6" class="hint-body">
+                Wenn er den 19:14-Zug genommen hätte, wäre er um 19:30 an der S-Warschauer Straße angekommen. Da es eine 12-minütige Verspätung gab, muss er um 19:42 angekommen sein. Von dort sind es 8 Minuten zu Fuß.
+            </div>
+        </div>
+        <div class="hint">
+            <div class="hint-header" onclick="toggleVisibility('hint9-7')">
+                Lösung
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="hint9-7" class="hint-body">
+                Lukas ist um 19:50 bei RevoluPharma angekommen.
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mystery">
+    <div class="hint-title" onclick="toggleVisibility('mystery10')">
+        Die Sicherheitskameraufnahmen vom 3. Oktober
+        <i class="fas fa-chevron-down"></i>
+    </div>
+    <div id="mystery10" class="hint-content">
+        <div class="hint">
+            <div class="hint-header" onclick="toggleVisibility('hint10-1')">
+                Hinweis 1
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="hint10-1" class="hint-body">
+                Woher stammt diese Sicherheitsaufnahme?
+            </div>
+        </div>
+        <div class="hint">
+            <div class="hint-header" onclick="toggleVisibility('hint10-2')">
+                Hinweis 2
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="hint10-2" class="hint-body">
+                Kannst du irgendwelche Hinweise erkennen, woher die Aufnahme stammen könnte?
+            </div>
+        </div>
+        <div class="hint">
+            <div class="hint-header" onclick="toggleVisibility('hint10-3')">
+                Hinweis 3
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="hint10-3" class="hint-body">
+                Was wissen wir über diese Einrichtung?
+            </div>
+        </div>
+        <div class="hint">
+            <div class="hint-header" onclick="toggleVisibility('hint10-4')">
+                Hinweis 4
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="hint10-4" class="hint-body">
+                Wer könnte etwas mit dieser Einrichtung zu tun gehabt haben? Warum ist das relevant?
+            </div>
+        </div>
+        <div class="hint">
+            <div class="hint-header" onclick="toggleVisibility('hint10-5')">
+                Hinweis 5
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="hint10-5" class="hint-body">
+                Gibt es Telefonnummern in Nachrichten, die unklar bleiben? Hast du diese Nummer schon einmal gesehen?
+            </div>
+        </div>
+        <div class="hint">
+            <div class="hint-header" onclick="toggleVisibility('hint10-6')">
+                Hinweis 6
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="hint10-6" class="hint-body">
+                Es ist in Ordnung, wenn dieser Teil unklar bleibt – solange du alle anderen Verdächtigen ausschließt, kannst du deinen Verdacht eintragen. Die Lösung wird die Sache klären.
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 The Last Evidence. Alle Rechte vorbehalten. <a href="impressum.html" style="color: white;">Impressum</a></p>
+    </footer>
+
+    <script>
+        function toggleNavbar() {
+            const navbarLinks = document.querySelector('.navbar-links');
+            navbarLinks.classList.toggle('active');
+        }
+
+        function toggleVisibility(id) {
+            const element = document.getElementById(id);
+            const icon = element.previousElementSibling.querySelector('i');
+            if (element.style.display === 'block') {
+                element.style.display = 'none';
+                icon.classList.remove('fa-chevron-up');
+                icon.classList.add('fa-chevron-down');
+            } else {
+                element.style.display = 'block';
+                icon.classList.remove('fa-chevron-down');
+                icon.classList.add('fa-chevron-up');
+            }
+        }
+
+        function checkSolution() {
+            let killerName = document.getElementById("killerName").value.toLowerCase();
+            if (killerName === "felix" || killerName === "weber") {
+                window.location.href = "143563232.html";
+            } else if (["sophie","jonas","thomas","emilia","lukas"].includes(killerName)) {
+                alert("Diese Person ist NICHT der Mörder! Prüfe die Hinweise, falls du weitere Hilfe brauchst.");
+            } else if (["schulte","heidemann","keller","schneider","falkenberg"].includes(killerName)) {
+                alert("Bitte gib den Vornamen und nicht den Nachnamen des Verdächtigen ein");
+            } else {
+                alert("Bitte gib den Vornamen eines Verdächtigen ein!");
+            }
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

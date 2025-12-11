@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Last Evidence</title>
+    <!-- CSS relative to /de folder -->
+    <link href="../styles.css" rel="stylesheet">
+    <!-- Favicon relative to /de folder -->
+    <link rel="icon" href="../public/images/favicon.ico" type="image/x-icon">
+</head>
+<body class="bg-dark">
+    <!-- Language Switcher -->
+    <div class="lang-switcher">
+        <a href="../index.html">
+            <img src="../flags/uk.png" alt="English" class="flag">
+            English
+        </a>
+        <a href="index.html">
+            <img src="../flags/de.png" alt="Deutsch" class="flag">
+            Deutsch
+        </a>
+    </div>
+
+    <div class="container">
+        <header class="text-center my-5">
+            <!-- Add logo before the title -->
+            <img src="../public/images/thelastevidencelogo.png" alt="The Last Evidence Logo" class="logo mb-3">
+            <h1 class="text-white typewriter">The Last Evidence&nbsp;</h1>
+        </header>
+
+        <!-- Navigation Buttons -->
+        <nav class="navbar">
+            <div class="navbar-links">
+                <a href="hints_and_solution.html" class="nav-btn">Hinweise & Lösung</a>
+                <a href="about.html" class="nav-btn">Über uns</a>
+                <a href="contact.html" class="nav-btn">Kontakt</a>
+            </div>
+        </nav>
+        <hr>
+
+        <!-- Main Content -->
+        <section class="content text-white text-center">
+            <div class="about-box mx-auto">
+                <p>The Last Evidence bietet fesselnde, interaktive Mordspiele, die dir und deinen Freunden stundenlangen Spielspaß bereiten, während ihr gemeinsam spannende Kriminalfälle löst.</p>
+            </div>
+        </section>
+
+        <!-- Flexbox Layout for Clickable Boxes -->
+        <div class="game-container">
+            <a href="murderofaceo.html" class="game-box">
+                <img src="../public/images/murderofaceo.png" alt="Spiel 1" class="game-image">
+                <h4 class="game-title">Mord an einem CEO</h4>
+                <p class="game-description">Der CEO eines Pharmaunternehmens wurde getötet, gerade als er ein lebensveränderndes Medikament auf den Markt bringen wollte. Löse das Rätsel und finde heraus, warum er ermordet wurde.</p>
+            </a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 The Last Evidence. Alle Rechte vorbehalten. <a href="impressum.html" style="color: white;">Impressum</a></p>
+    </footer>
+
+    <script>
+        function toggleNavbar() {
+            const navbarLinks = document.querySelector('.navbar-links');
+            navbarLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
