@@ -49,6 +49,36 @@ header {
     justify-content: center;
 }
 
+.lang-switcher {
+  display: flex;
+  gap: 20px; /* space between links */
+  justify-content: flex-end; /* right-align */
+  padding: 10px;
+  background-color: #222; /* dark background if you want */
+}
+
+/* Links */
+.lang-switcher a {
+  color: white; /* text color */
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 5px; /* space between flag and text */
+  transition: color 0.2s;
+}
+
+/* Hover effect */
+.lang-switcher a:hover {
+  color: #ffd700; /* gold on hover, for example */
+}
+
+/* Flag images */
+.lang-switcher .flag {
+  width: 24px;
+  height: auto;
+}
+
 /* Navbar Styles */
 .navbar {
     position: relative;
